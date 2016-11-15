@@ -1,0 +1,7 @@
+
+#ignore drupal core files
+drupal/sites/default/files
+drupal/sites/default/settings.local.php
+
+#ignore devdesktop
+drupal/sites/*.dd

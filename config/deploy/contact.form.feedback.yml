@@ -1,0 +1,12 @@
+uuid: e8bd718b-464d-4688-9cda-af8ab81201fa
+langcode: en
+status: true
+dependencies: {  }
+id: feedback
+label: Feedback
+recipients:
+  - ainsofs@sprep.org
+reply: ''
+weight: 0
+message: ''
+redirect: ''

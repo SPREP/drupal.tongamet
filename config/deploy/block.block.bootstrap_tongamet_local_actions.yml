@@ -1,0 +1,20 @@
+uuid: f479655a-bd89-4ff0-93d5-3306f99f0feb
+langcode: en
+status: true
+dependencies:
+  theme:
+    - bootstrap_tongamet
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: bootstrap_tongamet_local_actions
+theme: bootstrap_tongamet
+region: content
+weight: -5
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

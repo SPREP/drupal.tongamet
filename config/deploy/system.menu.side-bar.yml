@@ -1,0 +1,8 @@
+uuid: 9938938f-8484-4138-bbeb-d68249e2271a
+langcode: en
+status: true
+dependencies: {  }
+id: side-bar
+label: 'Side Bar'
+description: 'Site links on the Side Bar'
+locked: false

@@ -1,0 +1,22 @@
+uuid: 99e486f6-7930-4d0f-83bf-2312f68bde0a
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: weather_pattern
+label: 'weather pattern'
+type: 'canonical_entities:node'
+pattern: 'weather/[node:field_language:value]/[node:field_forecast_date:value]'
+selection_criteria:
+  6e1cd59a-6aa0-442a-a225-659dec299a96:
+    id: node_type
+    bundles:
+      weather_forecast: weather_forecast
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 6e1cd59a-6aa0-442a-a225-659dec299a96
+selection_logic: and
+weight: -5
+relationships: {  }

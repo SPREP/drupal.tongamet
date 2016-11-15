@@ -1,0 +1,22 @@
+uuid: 87770fd0-b4e2-49c5-b821-c3ff1a4e99f6
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - bootstrap_tongamet
+_core:
+  default_config_hash: jQQUUWN2Uxr5qZtc9zcJKBCxpKY8orN1u2HPqYYRQDI
+id: bootstrap_tongamet_powered
+theme: bootstrap_tongamet
+region: '-1'
+weight: -6
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

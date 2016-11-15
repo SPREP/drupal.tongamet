@@ -1,0 +1,22 @@
+uuid: b3b1dc86-44ae-405a-9921-f55455a78cbc
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.weather_forecast
+id: node.weather_forecast.promote
+field_name: promote
+entity_type: node
+bundle: weather_forecast
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

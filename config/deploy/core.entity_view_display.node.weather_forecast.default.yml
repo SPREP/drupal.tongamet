@@ -1,0 +1,45 @@
+uuid: 55384977-f276-49a7-bc9d-94e945ad6eab
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.weather_forecast.body
+    - field.field.node.weather_forecast.field_forecast_date
+    - field.field.node.weather_forecast.field_language
+    - node.type.weather_forecast
+  module:
+    - datetime
+    - panelizer
+    - text
+    - user
+third_party_settings:
+  panelizer:
+    enable: false
+    custom: false
+    allow: false
+    default: default
+id: node.weather_forecast.default
+targetEntityType: node
+bundle: weather_forecast
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+  field_forecast_date:
+    weight: 1
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+  links:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_language: true

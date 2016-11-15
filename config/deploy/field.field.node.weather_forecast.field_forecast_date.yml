@@ -1,0 +1,24 @@
+uuid: 80528531-2c25-4ea4-810b-06faed6bb32f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_forecast_date
+    - node.type.weather_forecast
+  module:
+    - datetime
+id: node.weather_forecast.field_forecast_date
+field_name: field_forecast_date
+entity_type: node
+bundle: weather_forecast
+label: Date
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+default_value_callback: ''
+settings: {  }
+field_type: datetime

@@ -1,0 +1,36 @@
+/**
+ * Place your custom styles here.
+ */
+body {
+	background-image: url(../img/bg.png);
+	background-color: #2D2D2D;
+	background-repeat: repeat-x;
+}
+
+div#my-container {
+    background-color: #fff;
+	padding-bottom: 1em;
+}
+div#my-banner {
+    background-image: url(../img/header.png);
+	background-repeat: no-repeat;
+    height: 220px;
+	background-size:contain;
+	background-position:center;
+}
+footer {
+	color: #fff;
+	font-size: small;
+	margin-top: 0 !important;
+	border: 0 !important;
+}
+.navbar-default {
+    background-color: #26267D;
+    border-color: #e7e7e7;
+}
+header#navbar a {
+    color: #fff;
+}
+header#navbar li.active a.is-active {
+    color: #000;
+}

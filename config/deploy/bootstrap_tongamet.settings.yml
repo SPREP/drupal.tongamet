@@ -1,0 +1,36 @@
+schemas:
+  bootstrap: 8000
+  bootstrap_tongamet: 8000
+favicon:
+  mimetype: image/vnd.microsoft.icon
+  path: profiles/lightning/favicon.ico
+  url: 'http://lightning-8-x-1-12-core.dd:8083/profiles/lightning/favicon.ico'
+  use_default: 0
+features:
+  comment_user_picture: true
+  comment_user_verification: true
+  favicon: 1
+  node_user_picture: true
+logo:
+  path: ''
+  url: ''
+  use_default: 0
+cdn_custom_css: /libraries/bootstrap/css/bootstrap.css
+cdn_custom_css_min: /libraries/bootstrap/css/bootstrap.min.css
+cdn_custom_js: /libraries/bootstrap/js/bootstrap.js
+cdn_custom_js_min: /libraries/bootstrap/js/bootstrap.min.js
+table_responsive: '-1'
+table: ''
+region_wells:
+  navigation: ''
+  navigation_collapsible: ''
+  header: ''
+  highlighted: ''
+  help: ''
+  content: ''
+  sidebar_first: well
+  sidebar_second: ''
+  footer: ''
+cdn_jsdelivr_theme: paper
+cdn_provider: custom
+breadcrumb: '2'

@@ -1,0 +1,25 @@
+uuid: a2571abd-9179-4fae-9647-b9edec0e8020
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:05417c11-3558-4483-9986-0808a3619c09'
+  module:
+    - block_content
+  theme:
+    - bootstrap_tongamet
+id: footeraboutus
+theme: bootstrap_tongamet
+region: footer
+weight: -4
+provider: null
+plugin: 'block_content:05417c11-3558-4483-9986-0808a3619c09'
+settings:
+  id: 'block_content:05417c11-3558-4483-9986-0808a3619c09'
+  label: 'Footer About Us'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

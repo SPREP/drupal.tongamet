@@ -1,0 +1,27 @@
+uuid: 4ae4c5cd-9b8e-4d36-bb05-69ea641769f8
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_language
+field_name: field_language
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: EN
+      label: English
+    -
+      value: TO
+      label: Tongan
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

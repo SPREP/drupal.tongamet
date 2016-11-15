@@ -1,0 +1,22 @@
+uuid: 0fbd71a3-c4d0-4d3a-a934-916ea1a30ec8
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - bootstrap_tongamet
+_core:
+  default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
+id: bootstrap_tongamet_breadcrumbs
+theme: bootstrap_tongamet
+region: footer
+weight: -6
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

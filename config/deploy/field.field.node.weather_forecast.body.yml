@@ -1,0 +1,22 @@
+uuid: 40a7bd3d-36b7-4490-8d8f-bce9e8f8f774
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.weather_forecast
+  module:
+    - text
+id: node.weather_forecast.body
+field_name: body
+entity_type: node
+bundle: weather_forecast
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

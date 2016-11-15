@@ -1,0 +1,22 @@
+uuid: 6603c3ed-12fc-4b76-810d-82bb3ff3d3cd
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - bootstrap_tongamet
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: bootstrap_tongamet_messages
+theme: bootstrap_tongamet
+region: highlighted
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,66 @@
+uuid: b80579bf-19ae-48c6-86d8-9576ad311767
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+  module:
+    - ckeditor
+    - editor_file
+third_party_settings:
+  editor_file:
+    status: true
+    scheme: public
+    directory: inline-files
+    extensions: 'txt pdf'
+format: full_html
+editor: ckeditor
+settings:
+  toolbar:
+    rows:
+      -
+        -
+          name: Formatting
+          items:
+            - Bold
+            - Italic
+        -
+          name: Links
+          items:
+            - Linkit
+            - DrupalUnlink
+        -
+          name: Lists
+          items:
+            - BulletedList
+            - NumberedList
+        -
+          name: Media
+          items:
+            - Blockquote
+            - Table
+            - HorizontalRule
+            - DrupalFile
+            - media_browser
+        -
+          name: Tools
+          items:
+            - Source
+            - Format
+            - ShowBlocks
+            - Maximize
+  plugins:
+    language:
+      language_list: un
+    stylescombo:
+      styles: ''
+    linkit:
+      linkit_profile: default
+image_upload:
+  status: false
+  scheme: public
+  directory: inline-images
+  max_size: ''
+  max_dimensions:
+    width: null
+    height: null

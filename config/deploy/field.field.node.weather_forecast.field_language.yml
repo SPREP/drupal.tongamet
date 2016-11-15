@@ -1,0 +1,23 @@
+uuid: 7deda632-973a-41d5-a0f3-c4825cf3f581
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_language
+    - node.type.weather_forecast
+  module:
+    - options
+id: node.weather_forecast.field_language
+field_name: field_language
+entity_type: node
+bundle: weather_forecast
+label: Language
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: EN
+default_value_callback: ''
+settings: {  }
+field_type: list_string

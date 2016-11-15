@@ -1,0 +1,14 @@
+uuid: 9eebe173-040f-4f7c-a061-1d02a860e2b5
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.weather_forecast_reviewer
+  module:
+    - user
+id: user_remove_role_action.weather_forecast_reviewer
+label: 'Remove the Weather Forecast Reviewer role from the selected users'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: weather_forecast_reviewer

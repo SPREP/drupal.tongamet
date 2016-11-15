@@ -1,0 +1,14 @@
+uuid: 2c8ffbc5-7b33-4870-ae8a-d275951d1729
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.weather_forecast_creator
+  module:
+    - user
+id: user_add_role_action.weather_forecast_creator
+label: 'Add the Weather Forecast Creator role to the selected users'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: weather_forecast_creator

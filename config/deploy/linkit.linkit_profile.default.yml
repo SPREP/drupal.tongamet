@@ -1,0 +1,20 @@
+uuid: 5ffccd12-86bf-41c6-8a0e-b1e02a9575cb
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: default
+label: default
+description: ''
+attributes: {  }
+matchers:
+  cf823344-4440-4215-81d7-36375200dc84:
+    uuid: cf823344-4440-4215-81d7-36375200dc84
+    id: 'entity:node'
+    weight: 0
+    settings:
+      result_description: default
+      bundles: {  }
+      group_by_bundle: false
+      include_unpublished: false

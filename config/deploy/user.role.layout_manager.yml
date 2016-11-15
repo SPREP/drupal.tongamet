@@ -1,0 +1,16 @@
+uuid: e547859b-3fed-4177-9d5a-842b290f0c4c
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: CwPdh_0e98rfLKfCvZVzqc4L0hV_uhmi-UJ50XsTqyU
+id: layout_manager
+label: 'Layout Manager'
+weight: 2
+is_admin: false
+permissions:
+  - 'administer node display'
+  - 'administer panelizer'
+  - 'administer panelizer node landing_page defaults'
+  - 'administer panelizer node page defaults'
+  - 'administer panelizer node weather_forecast defaults'

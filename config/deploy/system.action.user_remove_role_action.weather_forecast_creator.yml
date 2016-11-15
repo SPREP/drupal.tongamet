@@ -1,0 +1,14 @@
+uuid: 828eb2a6-43fd-4d64-8136-8dcf270c8e79
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.weather_forecast_creator
+  module:
+    - user
+id: user_remove_role_action.weather_forecast_creator
+label: 'Remove the Weather Forecast Creator role from the selected users'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: weather_forecast_creator

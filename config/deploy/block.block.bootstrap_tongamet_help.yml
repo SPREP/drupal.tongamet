@@ -1,0 +1,22 @@
+uuid: c0d617cd-cb30-4870-9f66-d7e917ad236a
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - bootstrap_tongamet
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: bootstrap_tongamet_help
+theme: bootstrap_tongamet
+region: content
+weight: -7
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,26 @@
+uuid: a1451657-8eeb-4d5b-ac93-eb85a3b64cab
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - bootstrap_tongamet
+_core:
+  default_config_hash: rx9IrdDv7Ldc4kpalZAxdhIPZfYIeOMh1N-qKoQZwHo
+id: bootstrap_tongamet_main_menu
+theme: bootstrap_tongamet
+region: navigation_collapsible
+weight: -6
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 1
+visibility: {  }

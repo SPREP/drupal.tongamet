@@ -1,0 +1,41 @@
+uuid: ad06b721-1553-4c5f-9207-1ff7c6afa70c
+langcode: en
+status: true
+dependencies: {  }
+name: 'Full HTML'
+format: full_html
+weight: 0
+filters:
+  filter_align:
+    id: filter_align
+    provider: filter
+    status: true
+    weight: 0
+    settings: {  }
+  filter_autop:
+    id: filter_autop
+    provider: filter
+    status: true
+    weight: 0
+    settings: {  }
+  filter_caption:
+    id: filter_caption
+    provider: filter
+    status: true
+    weight: 0
+    settings: {  }
+  filter_htmlcorrector:
+    id: filter_htmlcorrector
+    provider: filter
+    status: true
+    weight: 10
+    settings: {  }
+  filter_html:
+    id: filter_html
+    provider: filter
+    status: false
+    weight: -10
+    settings:
+      allowed_html: '<em> <strong> <cite> <blockquote cite> <code> <ul type> <ol start type> <li> <dl> <dt> <dd> <h2 id> <h3 id> <h4 id> <h5 id> <h6 id> <a href hreflang !href accesskey id rel target title> <table> <caption> <tbody> <thead> <tfoot> <th> <td> <tr> <hr> <drupal-entity data-entity-type data-entity-uuid data-entity-embed-display data-entity-embed-display-settings data-align data-caption data-embed-button> <p>'
+      filter_html_help: true
+      filter_html_nofollow: false
