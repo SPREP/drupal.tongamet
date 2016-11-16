@@ -1,0 +1,19 @@
+uuid: dd1d711a-4237-4abb-bbbd-615c9180714d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_m_forecast_to_midnight
+    - node.type.weather_forecast
+id: node.weather_forecast.field_m_forecast_to_midnight
+field_name: field_m_forecast_to_midnight
+entity_type: node
+bundle: weather_forecast
+label: 'Forecast to midnight tonight'
+description: "eg \tFOR ALL TONGA COASTAL WATERS:  \r\nEAST TO SOUTHEAST WINDS 10-15 KNOTS. \r\nMODERATE SEAS. A MODERATE EAST TO SOUTHEAST SWELL. "
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

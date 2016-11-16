@@ -1,0 +1,21 @@
+uuid: 18e0b166-6d6d-45eb-a7c0-81b54b2a401d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_marine_weather_footer
+    - node.type.weather_forecast
+id: node.weather_forecast.field_marine_weather_footer
+field_name: field_marine_weather_footer
+entity_type: node
+bundle: weather_forecast
+label: 'Marine Weather Footer'
+description: "eg THE MEAN SEA LEVEL PRESSURE RECORDED AT FUA'AMOTU AIRPORT AT 06:00AM WAS 1013.6 MILLIBARS AND THE RELATIVE HUMIDITY WAS 88%\r\n..........................................................................\r\n   FCD:    AA/FV=             CRS:     FV/ML="
+required: false
+translatable: false
+default_value:
+  -
+    value: "THE MEAN SEA LEVEL PRESSURE RECORDED AT FUA'AMOTU AIRPORT AT [HH:MM AM] WAS [XXX] MILLIBARS AND THE RELATIVE HUMIDITY WAS [XX%]\r\n..........................................................................\r\n   FCD:    AA/FV=             CRS:     FV/ML="
+default_value_callback: ''
+settings: {  }
+field_type: string_long

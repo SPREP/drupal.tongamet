@@ -1,0 +1,19 @@
+uuid: c4724f50-1106-4169-99f5-f90dc99d3d7a
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_m_tide_prediction
+field_name: field_m_tide_prediction
+entity_type: node
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

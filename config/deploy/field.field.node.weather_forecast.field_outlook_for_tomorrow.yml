@@ -1,0 +1,19 @@
+uuid: 6c6ca7c0-d77f-41f2-b545-59e4b42a6a05
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_outlook_for_tomorrow
+    - node.type.weather_forecast
+id: node.weather_forecast.field_outlook_for_tomorrow
+field_name: field_outlook_for_tomorrow
+entity_type: node
+bundle: weather_forecast
+label: 'Outlook for Tomorrow'
+description: "eg FOR ALL OF TONGA:\r\nLIGHT TO MODERATE EAST TO SOUTHEAST WINDS.\r\nMAINLY FINE APART FROM CLOUDY PERIODS WITH POSSIBLE SCATTERED SHOWERS."
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

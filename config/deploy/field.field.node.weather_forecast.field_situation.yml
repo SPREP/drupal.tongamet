@@ -1,0 +1,19 @@
+uuid: 67b3d644-2a3e-420e-a9ab-e2a320c501f0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_situation
+    - node.type.weather_forecast
+id: node.weather_forecast.field_situation
+field_name: field_situation
+entity_type: node
+bundle: weather_forecast
+label: Situation
+description: "eg \tA HIGH PRESSURE SYSTEM TO THE SOUTH OF TONGA CIRCULATING AN EAST TO SOUTHEAST WINDFLOW ALL OVER TONGA."
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

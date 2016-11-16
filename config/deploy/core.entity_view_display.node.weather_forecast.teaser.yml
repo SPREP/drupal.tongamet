@@ -6,11 +6,21 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.weather_forecast.body
     - field.field.node.weather_forecast.field_forecast_date
+    - field.field.node.weather_forecast.field_forecast_to_midnight_tonig
     - field.field.node.weather_forecast.field_language
+    - field.field.node.weather_forecast.field_m_forecast_to_midnight
+    - field.field.node.weather_forecast.field_m_outlook_for_tomorrow
+    - field.field.node.weather_forecast.field_m_tide_prediction
+    - field.field.node.weather_forecast.field_marine_warnings
+    - field.field.node.weather_forecast.field_marine_weather_footer
+    - field.field.node.weather_forecast.field_outlook_for_tomorrow
+    - field.field.node.weather_forecast.field_situation
+    - field.field.node.weather_forecast.field_sun_and_moon
+    - field.field.node.weather_forecast.field_temperature_forecast
+    - field.field.node.weather_forecast.field_warnings
     - node.type.weather_forecast
   module:
     - panelizer
-    - text
     - user
 third_party_settings:
   panelizer:
@@ -23,17 +33,22 @@ targetEntityType: node
 bundle: weather_forecast
 mode: teaser
 content:
-  body:
-    label: hidden
-    type: text_summary_or_trimmed
-    weight: 0
-    settings:
-      trim_length: 600
-    third_party_settings: {  }
   links:
     weight: 1
     settings: {  }
     third_party_settings: {  }
 hidden:
+  body: true
   field_forecast_date: true
+  field_forecast_to_midnight_tonig: true
   field_language: true
+  field_m_forecast_to_midnight: true
+  field_m_outlook_for_tomorrow: true
+  field_m_tide_prediction: true
+  field_marine_warnings: true
+  field_marine_weather_footer: true
+  field_outlook_for_tomorrow: true
+  field_situation: true
+  field_sun_and_moon: true
+  field_temperature_forecast: true
+  field_warnings: true

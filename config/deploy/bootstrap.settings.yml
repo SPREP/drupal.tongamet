@@ -1,8 +1,10 @@
 favicon:
   mimetype: image/vnd.microsoft.icon
   path: profiles/lightning/favicon.ico
-  url: ''
+  url: 'http://tonga-met.dd:8083/profiles/lightning/favicon.ico'
   use_default: false
+schemas:
+  bootstrap: 8000
 features:
   comment_user_picture: true
   comment_user_verification: true
@@ -12,5 +14,4 @@ logo:
   path: profiles/lightning/lightning.png
   url: ''
   use_default: false
-schemas:
-  bootstrap: 8000
+schema: 8000

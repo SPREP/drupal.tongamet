@@ -1,0 +1,19 @@
+uuid: b84947ce-3401-44d3-a85e-dbfe836bd3c8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_m_outlook_for_tomorrow
+    - node.type.weather_forecast
+id: node.weather_forecast.field_m_outlook_for_tomorrow
+field_name: field_m_outlook_for_tomorrow
+entity_type: node
+bundle: weather_forecast
+label: 'Outlook for Tomorrow'
+description: "eg \tFOR ALL TONGA COASTAL WATERS:\r\nEAST TO SOUTHEAST WINDS 10-15 KNOTS.\r\nMODERATE SEAS. A MODERATE EASTERLY  SWELL.   "
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

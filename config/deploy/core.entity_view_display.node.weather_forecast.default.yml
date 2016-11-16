@@ -5,10 +5,22 @@ dependencies:
   config:
     - field.field.node.weather_forecast.body
     - field.field.node.weather_forecast.field_forecast_date
+    - field.field.node.weather_forecast.field_forecast_to_midnight_tonig
     - field.field.node.weather_forecast.field_language
+    - field.field.node.weather_forecast.field_m_forecast_to_midnight
+    - field.field.node.weather_forecast.field_m_outlook_for_tomorrow
+    - field.field.node.weather_forecast.field_m_tide_prediction
+    - field.field.node.weather_forecast.field_marine_warnings
+    - field.field.node.weather_forecast.field_marine_weather_footer
+    - field.field.node.weather_forecast.field_outlook_for_tomorrow
+    - field.field.node.weather_forecast.field_situation
+    - field.field.node.weather_forecast.field_sun_and_moon
+    - field.field.node.weather_forecast.field_temperature_forecast
+    - field.field.node.weather_forecast.field_warnings
     - node.type.weather_forecast
   module:
-    - datetime
+    - ds
+    - field_group
     - panelizer
     - text
     - user
@@ -18,28 +30,384 @@ third_party_settings:
     custom: false
     allow: false
     default: default
+    displays:
+      default:
+        blocks:
+          06a173e1-abb5-43b2-a86e-181d9c54b0d1:
+            id: 'entity_field:node:uid'
+            label: 'Authored by'
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: hidden
+              type: author
+              settings: {  }
+              third_party_settings: {  }
+              weight: 0
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            region: middle
+            weight: 0
+            uuid: 06a173e1-abb5-43b2-a86e-181d9c54b0d1
+          d9e1fd89-dc1e-4d54-b1a9-73f855753428:
+            id: 'entity_field:node:created'
+            label: 'Authored on'
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: hidden
+              type: timestamp
+              settings:
+                date_format: medium
+                custom_date_format: ''
+                timezone: ''
+              third_party_settings: {  }
+              weight: 0
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            region: middle
+            weight: 0
+            uuid: d9e1fd89-dc1e-4d54-b1a9-73f855753428
+          647c1a77-3316-4dfc-b3d7-68a6d078bc54:
+            id: 'entity_field:node:body'
+            label: Body
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: hidden
+              type: text_default
+              settings: {  }
+              third_party_settings: {  }
+              weight: 0
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            region: middle
+            weight: 0
+            uuid: 647c1a77-3316-4dfc-b3d7-68a6d078bc54
+          b0395505-2562-4b37-8fe4-0fbd4eef604e:
+            id: 'entity_field:node:field_forecast_date'
+            label: Date
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: above
+              type: datetime_default
+              settings:
+                format_type: medium
+                timezone_override: ''
+              third_party_settings: {  }
+              weight: 0
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            region: middle
+            weight: 1
+            uuid: b0395505-2562-4b37-8fe4-0fbd4eef604e
+          8400d47f-0999-4864-aa25-05b2bfbc14cf:
+            id: 'entity_field:node:field_forecast_to_midnight_tonig'
+            label: 'Forecast to midnight tonight'
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: above
+              type: basic_string
+              settings: {  }
+              third_party_settings: {  }
+              weight: 0
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            region: middle
+            weight: 5
+            uuid: 8400d47f-0999-4864-aa25-05b2bfbc14cf
+          dcdfe77d-e051-43d7-b113-c2f797ca7686:
+            id: 'entity_field:node:field_m_forecast_to_midnight'
+            label: 'Forecast to midnight tonight'
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: above
+              type: basic_string
+              settings: {  }
+              third_party_settings: {  }
+              weight: 0
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            region: middle
+            weight: 11
+            uuid: dcdfe77d-e051-43d7-b113-c2f797ca7686
+          f5c53cf3-1914-42a3-8266-cacb8281ed5c:
+            id: 'entity_field:node:field_m_outlook_for_tomorrow'
+            label: 'Outlook for Tomorrow'
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: above
+              type: basic_string
+              settings: {  }
+              third_party_settings: {  }
+              weight: 0
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            region: middle
+            weight: 12
+            uuid: f5c53cf3-1914-42a3-8266-cacb8281ed5c
+          4b70fe51-8ea3-4d22-aeae-8c52ae667c47:
+            id: 'entity_field:node:field_m_tide_prediction'
+            label: 'Tide Prediction'
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: above
+              type: basic_string
+              settings: {  }
+              third_party_settings: {  }
+              weight: 0
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            region: middle
+            weight: 13
+            uuid: 4b70fe51-8ea3-4d22-aeae-8c52ae667c47
+          2efde3cc-a941-445c-af63-cff6d4ff0384:
+            id: 'entity_field:node:field_marine_warnings'
+            label: Warnings
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: above
+              type: basic_string
+              settings: {  }
+              third_party_settings: {  }
+              weight: 0
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            region: middle
+            weight: 10
+            uuid: 2efde3cc-a941-445c-af63-cff6d4ff0384
+          e531dd8e-281e-4bed-b039-1dd3298df49c:
+            id: 'entity_field:node:field_outlook_for_tomorrow'
+            label: 'Outlook for Tomorrow'
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: above
+              settings: {  }
+              third_party_settings: {  }
+              type: basic_string
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            region: middle
+            weight: 14
+            uuid: e531dd8e-281e-4bed-b039-1dd3298df49c
+          e8b2b890-a15f-4271-b589-9310e97b3897:
+            id: 'entity_field:node:field_situation'
+            label: Situation
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: above
+              type: basic_string
+              settings: {  }
+              third_party_settings: {  }
+              weight: 0
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            region: middle
+            weight: 4
+            uuid: e8b2b890-a15f-4271-b589-9310e97b3897
+          620b7286-e9ff-4b46-8fce-b9b76485be77:
+            id: 'entity_field:node:field_sun_and_moon'
+            label: 'Sun and Moon'
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: above
+              type: basic_string
+              settings: {  }
+              third_party_settings: {  }
+              weight: 0
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            region: middle
+            weight: 8
+            uuid: 620b7286-e9ff-4b46-8fce-b9b76485be77
+          abff3a34-415a-417c-b3e8-4c8dd1e8e3e6:
+            id: 'entity_field:node:field_temperature_forecast'
+            label: 'Temperature Forecast for Nukualofa'
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: above
+              type: basic_string
+              settings: {  }
+              third_party_settings: {  }
+              weight: 0
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            region: middle
+            weight: 9
+            uuid: abff3a34-415a-417c-b3e8-4c8dd1e8e3e6
+          c134e385-f45a-4d06-92ab-26d8440446dc:
+            id: 'entity_field:node:field_warnings'
+            label: Warnings
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: above
+              type: basic_string
+              settings: {  }
+              third_party_settings: {  }
+              weight: 0
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            region: middle
+            weight: 3
+            uuid: c134e385-f45a-4d06-92ab-26d8440446dc
+        id: panels_variant
+        label: Default
+        uuid: b948f541-4fdb-4ac5-a6cb-1363566e7966
+        weight: 0
+        layout: onecol
+        layout_settings: {  }
+        page_title: '[node:title]'
+        storage_type: ''
+        storage_id: ''
+        builder: ipe
+        pattern: panelizer
+  field_group:
+    group_weather_bulletin:
+      children:
+        - field_warnings
+        - field_situation
+        - field_forecast_to_midnight_tonig
+        - field_outlook_for_tomorrow
+        - field_temperature_forecast
+      parent_name: ''
+      weight: 2
+      format_type: fieldset
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+      label: 'Weather Bulletin'
+    group_marine_weather_bulletin:
+      children:
+        - field_marine_warnings
+        - field_m_forecast_to_midnight
+        - field_m_outlook_for_tomorrow
+        - field_m_tide_prediction
+        - field_sun_and_moon
+        - field_marine_weather_footer
+      parent_name: ''
+      weight: 3
+      format_type: fieldset
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+      label: 'Marine Weather Bulletin'
+  ds:
+    layout:
+      id: onecol
+      path: profiles/lightning/modules/contrib/panels/layouts/onecol
+      library: layout_plugin/onecol
+      disable_css: false
+      entity_classes: all_classes
+      settings: {  }
+    regions:
+      middle:
+        - body
+        - links
+        - field_warnings
+        - field_situation
+        - field_marine_warnings
+        - field_m_forecast_to_midnight
+        - field_forecast_to_midnight_tonig
+        - field_m_outlook_for_tomorrow
+        - field_outlook_for_tomorrow
+        - field_m_tide_prediction
+        - field_temperature_forecast
+        - field_sun_and_moon
+        - field_marine_weather_footer
 id: node.weather_forecast.default
 targetEntityType: node
 bundle: weather_forecast
 mode: default
 content:
   body:
-    label: hidden
     type: text_default
-    weight: 0
+    weight: 1
+    label: hidden
     settings: {  }
     third_party_settings: {  }
-  field_forecast_date:
-    weight: 1
+  field_forecast_to_midnight_tonig:
+    weight: 6
     label: above
-    settings:
-      format_type: medium
-      timezone_override: ''
+    settings: {  }
     third_party_settings: {  }
-    type: datetime_default
+    type: basic_string
+  field_m_forecast_to_midnight:
+    weight: 6
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+  field_m_outlook_for_tomorrow:
+    weight: 7
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+  field_m_tide_prediction:
+    weight: 8
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+  field_marine_warnings:
+    weight: 5
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+  field_marine_weather_footer:
+    weight: 10
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+  field_outlook_for_tomorrow:
+    weight: 7
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+  field_situation:
+    weight: 5
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+  field_sun_and_moon:
+    weight: 9
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+  field_temperature_forecast:
+    weight: 8
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+  field_warnings:
+    weight: 4
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
   links:
-    weight: 2
+    weight: 4
     settings: {  }
     third_party_settings: {  }
 hidden:
+  field_forecast_date: true
   field_language: true

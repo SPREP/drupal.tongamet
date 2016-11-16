@@ -1,0 +1,21 @@
+uuid: 88ea1c8c-7a56-4b3e-9ba7-0e43b986fa9f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_temperature_forecast
+    - node.type.weather_forecast
+id: node.weather_forecast.field_temperature_forecast
+field_name: field_temperature_forecast
+entity_type: node
+bundle: weather_forecast
+label: 'Temperature Forecast for Nukualofa'
+description: "eg MAXIMUM FOR TODAY                : 29C\r\nMINIMUM FOR TONIGHT             : 20C"
+required: false
+translatable: false
+default_value:
+  -
+    value: "MAXIMUM FOR TODAY                : 0C\r\nMINIMUM FOR TONIGHT             : 0C"
+default_value_callback: ''
+settings: {  }
+field_type: string_long

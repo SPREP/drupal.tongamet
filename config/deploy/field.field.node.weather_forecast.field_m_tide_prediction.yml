@@ -1,0 +1,21 @@
+uuid: e9003712-ff39-4b88-af6b-668da516277e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_m_tide_prediction
+    - node.type.weather_forecast
+id: node.weather_forecast.field_m_tide_prediction
+field_name: field_m_tide_prediction
+entity_type: node
+bundle: weather_forecast
+label: 'Tide Prediction'
+description: "eg \tHIGH TIDE         : 09:30AM\r\nLOW TIDE         : 03:35PM "
+required: false
+translatable: false
+default_value:
+  -
+    value: "HIGH TIDE         : HH:MM AM\r\nLOW TIDE         : HH:MMPM "
+default_value_callback: ''
+settings: {  }
+field_type: string_long

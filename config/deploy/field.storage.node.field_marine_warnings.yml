@@ -1,0 +1,19 @@
+uuid: 12a1d1f2-f9ff-45b3-8e87-1b4382842a34
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_marine_warnings
+field_name: field_marine_warnings
+entity_type: node
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

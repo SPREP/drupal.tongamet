@@ -1,0 +1,19 @@
+uuid: 3307942e-2827-4d3d-843c-5eba2605c3c1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_forecast_to_midnight_tonig
+    - node.type.weather_forecast
+id: node.weather_forecast.field_forecast_to_midnight_tonig
+field_name: field_forecast_to_midnight_tonig
+entity_type: node
+bundle: weather_forecast
+label: 'Forecast to midnight tonight'
+description: "eg \tFOR ALL OF TONGA:\r\nLIGHT TO MODERATE EAST TO SOUTHEAST WINDS.\r\nMAINLY FINE APART FROM CLOUDY PERIODS WITH POSSIBLE SCATTERED SHOWERS."
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

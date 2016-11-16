@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - node.type.weather_forecast
+    - system.menu.main
   module:
     - node
     - options
@@ -233,6 +234,15 @@ display:
     display_options:
       display_extenders: {  }
       path: weather
+      menu:
+        type: normal
+        title: Weather
+        description: ''
+        expanded: false
+        parent: ''
+        weight: -49
+        context: '0'
+        menu_name: main
     cache_metadata:
       max-age: -1
       contexts:

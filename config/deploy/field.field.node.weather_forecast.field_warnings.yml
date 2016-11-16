@@ -1,0 +1,19 @@
+uuid: 502b063a-efff-4e87-99ee-fb2c8f82fb51
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_warnings
+    - node.type.weather_forecast
+id: node.weather_forecast.field_warnings
+field_name: field_warnings
+entity_type: node
+bundle: weather_forecast
+label: Warnings
+description: "eg \tAN EXTREME HIGH TIDE WARNING REMAINS INFORCE FOR ALL OF TONGA LOW LYING COASTAL AREAS."
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long
