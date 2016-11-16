@@ -1,5 +1,6 @@
 schemas:
   bootstrap_tongamet: 8000
+  bootstrap: 8000
 favicon:
   mimetype: image/vnd.microsoft.icon
   path: profiles/lightning/favicon.ico
@@ -18,7 +19,7 @@ cdn_custom_css: /libraries/bootstrap/css/bootstrap.css
 cdn_custom_css_min: /libraries/bootstrap/css/bootstrap.min.css
 cdn_custom_js: /libraries/bootstrap/js/bootstrap.js
 cdn_custom_js_min: /libraries/bootstrap/js/bootstrap.min.js
-table_responsive: 0
+table_responsive: '0'
 table: ''
 region_wells:
   navigation: ''
@@ -27,8 +28,8 @@ region_wells:
   highlighted: ''
   help: ''
   content: ''
-  sidebar_first: well
-  sidebar_second: ''
+  sidebar_first: ''
+  sidebar_second: 'well well-sm'
   footer: ''
 breadcrumb: '2'
 schema: '8000'

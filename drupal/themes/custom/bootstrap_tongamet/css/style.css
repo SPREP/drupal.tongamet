@@ -34,3 +34,6 @@ header#navbar a {
 header#navbar li.active a.is-active {
     color: #000;
 }
+iframe {
+	border: 0;
+}
