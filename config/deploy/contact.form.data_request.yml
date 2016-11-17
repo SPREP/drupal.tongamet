@@ -1,0 +1,12 @@
+uuid: 922976dd-8e37-484f-8e84-0e12d6f49810
+langcode: en
+status: true
+dependencies: {  }
+id: data_request
+label: 'Data Request'
+recipients:
+  - ainsofs@sprep.org
+reply: 'We will get back to you shortly'
+weight: 0
+message: 'Thank you for your request'
+redirect: /contact/data_request

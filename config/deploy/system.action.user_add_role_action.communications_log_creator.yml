@@ -1,0 +1,14 @@
+uuid: 092fe3ce-5941-4748-a2eb-8b55bd71e757
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.communications_log_creator
+  module:
+    - user
+id: user_add_role_action.communications_log_creator
+label: 'Add the Communications Log Creator role to the selected users'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: communications_log_creator

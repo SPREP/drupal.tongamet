@@ -1,0 +1,23 @@
+uuid: 19d5e9ae-641f-4999-b44d-5d137c3f4142
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: sub_page_pattern
+label: 'Sub Page Pattern'
+type: 'canonical_entities:node'
+pattern: '[node:menu-link:parent:title]/[node:title]'
+selection_criteria:
+  8d1dc28a-9788-4633-b1fa-f3c6edf0ac26:
+    id: node_type
+    bundles:
+      landing_page: landing_page
+      page: page
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 8d1dc28a-9788-4633-b1fa-f3c6edf0ac26
+selection_logic: and
+weight: -9
+relationships: {  }

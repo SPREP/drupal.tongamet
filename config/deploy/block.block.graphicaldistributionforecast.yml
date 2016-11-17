@@ -1,0 +1,31 @@
+uuid: cc15855e-5a2a-4442-b1a4-1e6d95ab8837
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:88677ce1-743c-40d3-b25c-8a4572a9b64c'
+  module:
+    - block_content
+    - system
+  theme:
+    - bootstrap_tongamet
+id: graphicaldistributionforecast
+theme: bootstrap_tongamet
+region: sidebar_second
+weight: -8
+provider: null
+plugin: 'block_content:88677ce1-743c-40d3-b25c-8a4572a9b64c'
+settings:
+  id: 'block_content:88677ce1-743c-40d3-b25c-8a4572a9b64c'
+  label: 'Graphical Distribution Forecast'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/node/22*\r\n/weather*"
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,15 @@
+uuid: 60ba6863-6688-4070-9187-421cb2bd37f7
+langcode: en
+status: true
+dependencies: {  }
+id: communications_log_reviewer
+label: 'Communications Log Reviewer'
+weight: 10
+is_admin: null
+permissions:
+  - 'edit any communications_log content'
+  - 'delete any communications_log content'
+  - 'use draft_published transition'
+  - 'use needs_review_draft transition'
+  - 'use needs_review_published transition'
+  - 'use published_published transition'

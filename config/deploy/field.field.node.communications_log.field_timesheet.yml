@@ -1,0 +1,23 @@
+uuid: 9990e708-4d20-4b68-91b0-97e4c548e152
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_timesheet
+    - node.type.communications_log
+  module:
+    - field_collection
+id: node.communications_log.field_timesheet
+field_name: field_timesheet
+entity_type: node
+bundle: communications_log
+label: Timesheet
+description: ''
+required: false
+translatable: false
+default_value:
+  - {  }
+  - {  }
+default_value_callback: ''
+settings: {  }
+field_type: field_collection

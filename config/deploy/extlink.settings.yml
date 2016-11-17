@@ -7,5 +7,5 @@ extlink_subdomains: true
 extlink_mailto_class: '0'
 extlink_img_class: false
 extlink_class: ext
-extlink_css_exclude: ''
+extlink_css_exclude: '#block-toplinks'
 extlink_css_explicit: ''

@@ -1,0 +1,22 @@
+uuid: a556e3f6-836f-41fe-97c1-fd025c4a2d3b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.communications_log
+  module:
+    - text
+id: node.communications_log.body
+field_name: body
+entity_type: node
+bundle: communications_log
+label: Comment
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

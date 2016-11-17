@@ -1,0 +1,27 @@
+uuid: 11fa0129-64e8-4d83-8d4e-32f4d5564249
+langcode: en
+status: true
+dependencies:
+  module:
+    - field_collection
+    - options
+id: field_collection_item.field_remarks
+field_name: field_remarks
+entity_type: field_collection_item
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: OK
+      label: OK
+    -
+      value: 'ON TIME'
+      label: 'ON TIME'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

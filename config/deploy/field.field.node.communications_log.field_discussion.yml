@@ -1,0 +1,23 @@
+uuid: 35e7fd1e-d0ce-422d-9546-b38504fab5e3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_discussion
+    - node.type.communications_log
+id: node.communications_log.field_discussion
+field_name: field_discussion
+entity_type: node
+bundle: communications_log
+label: Discussion
+description: 'Did you call out for all duty officers of your shift for a Prayer to start of your respective shift works and then carry out Weather briefing/discussions to the rest of duty officers based on the latest model data/runs discussing the current weather situations, outlook, past weather (last 12-24hrs), is there any significant weather feature/system that is likely to affect us, delegation of duty and responsibilities during your shifts, and any other matter that needs to be raised and discussed.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean

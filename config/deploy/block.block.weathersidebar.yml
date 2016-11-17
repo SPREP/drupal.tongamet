@@ -1,0 +1,31 @@
+uuid: 94223085-5b14-4ab4-ad35-f519d6bd4355
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:4ba3c317-752a-4fa9-8db7-dc6febbbbbf9'
+  module:
+    - block_content
+    - system
+  theme:
+    - bootstrap_tongamet
+id: weathersidebar
+theme: bootstrap_tongamet
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'block_content:4ba3c317-752a-4fa9-8db7-dc6febbbbbf9'
+settings:
+  id: 'block_content:4ba3c317-752a-4fa9-8db7-dc6febbbbbf9'
+  label: 'Weather Sidebar'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '/weather*'
+    negate: false
+    context_mapping: {  }

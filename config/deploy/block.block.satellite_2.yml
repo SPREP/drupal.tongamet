@@ -1,0 +1,31 @@
+uuid: 916468e8-4fa3-436d-8ab7-29af33099a91
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:a99f4093-9810-47a0-836f-291230cc0e69'
+  module:
+    - block_content
+    - system
+  theme:
+    - bootstrap_tongamet
+id: satellite_2
+theme: bootstrap_tongamet
+region: sidebar_second
+weight: -7
+provider: null
+plugin: 'block_content:a99f4093-9810-47a0-836f-291230cc0e69'
+settings:
+  id: 'block_content:a99f4093-9810-47a0-836f-291230cc0e69'
+  label: Satellite
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '/weather*'
+    negate: false
+    context_mapping: {  }

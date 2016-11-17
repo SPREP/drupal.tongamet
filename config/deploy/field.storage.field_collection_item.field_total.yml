@@ -1,0 +1,20 @@
+uuid: ad61ae93-2930-4d35-8645-b79decbbe690
+langcode: en
+status: true
+dependencies:
+  module:
+    - field_collection
+id: field_collection_item.field_total
+field_name: field_total
+entity_type: field_collection_item
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,56 @@
+uuid: 8f55c8af-d982-4415-b14d-a37cb193c2eb
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.homepage
+  content:
+    - 'block_content:basic:9cb01a39-2b8b-4f8c-bcd6-a7737fa19feb'
+    - 'block_content:basic:b1b622fa-6ba2-4b81-a4d2-fc441bc64bdf'
+  module:
+    - block_content
+    - panels
+id: homepage-panels_variant-0
+label: Panels
+variant: panels_variant
+variant_settings:
+  blocks:
+    4eb59782-a198-453c-bcdd-f9e13b2f7378:
+      id: 'block_content:9cb01a39-2b8b-4f8c-bcd6-a7737fa19feb'
+      label: Latest
+      provider: block_content
+      label_display: '0'
+      status: true
+      info: ''
+      view_mode: full
+      context_mapping: {  }
+      region: upper_left
+      uuid: 4eb59782-a198-453c-bcdd-f9e13b2f7378
+      weight: 1
+    bf702cc8-816e-4eb3-870e-0b19ba8329bc:
+      id: 'block_content:b1b622fa-6ba2-4b81-a4d2-fc441bc64bdf'
+      label: 'Current Forecast'
+      provider: block_content
+      label_display: '0'
+      status: true
+      info: ''
+      view_mode: full
+      context_mapping: {  }
+      region: upper_right
+      uuid: bf702cc8-816e-4eb3-870e-0b19ba8329bc
+      weight: 1
+  id: panels_variant
+  uuid: cf219d21-7a19-40e7-ae8e-c2698a218c17
+  label: null
+  weight: 0
+  layout: booststrap-6-6-bricks
+  layout_settings: {  }
+  page_title: ''
+  storage_type: page_manager
+  storage_id: homepage-panels_variant-0
+  builder: ipe
+page: homepage
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

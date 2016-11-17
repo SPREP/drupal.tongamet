@@ -1,0 +1,18 @@
+uuid: 5af7f8e8-8b81-4a5a-ac56-d07ebd12f166
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Communications Log'
+type: communications_log
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

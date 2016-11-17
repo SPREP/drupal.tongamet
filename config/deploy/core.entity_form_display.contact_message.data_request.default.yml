@@ -1,0 +1,47 @@
+uuid: 393283a8-a1df-4f46-a788-42ef90c4f966
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.data_request
+    - field.field.contact_message.data_request.field_data_request_form
+  module:
+    - file
+id: contact_message.data_request.default
+targetEntityType: contact_message
+bundle: data_request
+mode: default
+content:
+  copy:
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+  field_data_request_form:
+    weight: 4
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+  mail:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+  message:
+    type: string_textarea
+    weight: 3
+    settings:
+      rows: 12
+      placeholder: ''
+    third_party_settings: {  }
+  name:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+  subject:
+    type: string_textfield
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

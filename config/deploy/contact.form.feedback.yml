@@ -1,12 +1,20 @@
 uuid: e8bd718b-464d-4688-9cda-af8ab81201fa
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - contact_storage
+third_party_settings:
+  contact_storage:
+    submit_text: 'Send message'
+    show_preview: true
+    disabled_form_message: 'This contact form has been disabled.'
+    maximum_submissions_user: 0
 id: feedback
 label: Feedback
 recipients:
   - ainsofs@sprep.org
-reply: ''
+reply: 'We will review your message and get back to you.'
 weight: 0
-message: ''
+message: 'Your message was sent.'
 redirect: ''

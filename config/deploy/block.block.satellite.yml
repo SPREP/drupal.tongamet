@@ -1,0 +1,25 @@
+uuid: 0aebc87f-ee3d-41df-9605-b571967b3a1c
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:a99f4093-9810-47a0-836f-291230cc0e69'
+  module:
+    - block_content
+  theme:
+    - bootstrap_tongamet
+id: satellite
+theme: bootstrap_tongamet
+region: '-1'
+weight: -6
+provider: null
+plugin: 'block_content:a99f4093-9810-47a0-836f-291230cc0e69'
+settings:
+  id: 'block_content:a99f4093-9810-47a0-836f-291230cc0e69'
+  label: Satellite
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

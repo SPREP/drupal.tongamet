@@ -1,0 +1,28 @@
+uuid: 4bff7041-23fb-4195-b63b-8f7fb2591c7b
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.data_request
+    - field.field.contact_message.data_request.field_data_request_form
+  module:
+    - file
+id: contact_message.data_request.default
+targetEntityType: contact_message
+bundle: data_request
+mode: default
+content:
+  field_data_request_form:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: file_default
+  message:
+    type: string
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden: {  }

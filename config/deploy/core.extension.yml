@@ -8,6 +8,7 @@ module:
   ckeditor: 0
   config: 0
   contact: 0
+  contact_storage: 0
   contextual: 0
   ctools: 0
   ctools_block: 0
@@ -22,10 +23,12 @@ module:
   entity_embed: 0
   entity_reference: 0
   field: 0
+  field_collection: 0
   field_group: 0
   field_ui: 0
   file: 0
   filter: 0
+  google_analytics: 0
   help: 0
   history: 0
   image: 0
@@ -62,8 +65,11 @@ module:
   path: 0
   quickedit: 0
   rdf: 0
+  recaptcha: 0
   scheduled_updates: 0
   shortcut: 0
+  smtp: 0
+  superfish: 0
   system: 0
   taxonomy: 0
   text: 0

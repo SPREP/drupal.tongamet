@@ -1,0 +1,25 @@
+uuid: 0029ac31-ef19-4197-86fd-f93e12d0297a
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:a2d78a4b-fa5d-4a74-8082-139fa5d16185'
+  module:
+    - block_content
+  theme:
+    - bootstrap_tongamet
+id: weathermaps
+theme: bootstrap_tongamet
+region: '-1'
+weight: -4
+provider: null
+plugin: 'block_content:a2d78a4b-fa5d-4a74-8082-139fa5d16185'
+settings:
+  id: 'block_content:a2d78a4b-fa5d-4a74-8082-139fa5d16185'
+  label: 'Weather Maps'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

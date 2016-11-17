@@ -20,6 +20,7 @@ dependencies:
     - field.field.node.weather_forecast.field_warnings
     - node.type.weather_forecast
   module:
+    - ds
     - panelizer
     - user
 third_party_settings:
@@ -28,6 +29,28 @@ third_party_settings:
     custom: false
     allow: false
     default: default
+  ds:
+    layout:
+      id: onecol
+      path: profiles/lightning/modules/contrib/panels/layouts/onecol
+      library: layout_plugin/onecol
+      disable_css: false
+      entity_classes: all_classes
+      settings: {  }
+    regions:
+      middle:
+        - node_title
+        - links
+    fields:
+      node_title:
+        plugin_id: node_title
+        weight: 0
+        label: hidden
+        formatter: default
+        settings:
+          link: true
+          wrapper: h3
+          class: ''
 id: node.weather_forecast.teaser
 targetEntityType: node
 bundle: weather_forecast

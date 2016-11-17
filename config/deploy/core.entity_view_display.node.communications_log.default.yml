@@ -1,0 +1,42 @@
+uuid: 6567750e-829a-4e9d-88ff-569f46cba44d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.communications_log.body
+    - field.field.node.communications_log.field_discussion
+    - field.field.node.communications_log.field_timesheet
+    - node.type.communications_log
+  module:
+    - field_collection
+    - text
+    - user
+id: node.communications_log.default
+targetEntityType: node
+bundle: communications_log
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+  field_discussion:
+    weight: 103
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+  field_timesheet:
+    weight: 102
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: field_collection_list
+  links:
+    weight: 100
+hidden: {  }

@@ -1,0 +1,9 @@
+uuid: 8cb4e362-0699-4b4d-a68e-949d79f9ba1b
+langcode: en
+status: true
+dependencies: {  }
+name: 'Log Content'
+vid: log_content
+description: ''
+hierarchy: 0
+weight: 0

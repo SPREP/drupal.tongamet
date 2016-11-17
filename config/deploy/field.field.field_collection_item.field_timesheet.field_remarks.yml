@@ -1,0 +1,23 @@
+uuid: b4091390-af6f-41c9-a3bd-c6b0c3c37817
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.field_collection_item.field_remarks
+    - field_collection.field_collection.field_timesheet
+  module:
+    - options
+id: field_collection_item.field_timesheet.field_remarks
+field_name: field_remarks
+entity_type: field_collection_item
+bundle: field_timesheet
+label: Remarks
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 'ON TIME'
+default_value_callback: ''
+settings: {  }
+field_type: list_string

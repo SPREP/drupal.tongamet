@@ -1,0 +1,25 @@
+uuid: 806a8ae2-9b18-4b9d-8825-5df876ce69cd
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:65bfed38-4893-47ce-a0e2-59db2e68013a'
+  module:
+    - block_content
+  theme:
+    - bootstrap_tongamet
+id: right
+theme: bootstrap_tongamet
+region: '-1'
+weight: -9
+provider: null
+plugin: 'block_content:65bfed38-4893-47ce-a0e2-59db2e68013a'
+settings:
+  id: 'block_content:65bfed38-4893-47ce-a0e2-59db2e68013a'
+  label: right
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

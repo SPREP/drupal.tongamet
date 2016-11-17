@@ -1,0 +1,14 @@
+uuid: 7005e35c-4fd0-428c-9ad8-951f9184f3cf
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.communications_log_creator
+  module:
+    - user
+id: user_remove_role_action.communications_log_creator
+label: 'Remove the Communications Log Creator role from the selected users'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: communications_log_creator

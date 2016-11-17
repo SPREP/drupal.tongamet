@@ -1,0 +1,27 @@
+uuid: b5ebd56e-4068-44bb-a4da-2b2301073954
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.data_request
+    - field.storage.contact_message.field_data_request_form
+  module:
+    - file
+id: contact_message.data_request.field_data_request_form
+field_name: field_data_request_form
+entity_type: contact_message
+bundle: data_request
+label: 'Data Request Form'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'doc docx'
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

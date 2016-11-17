@@ -1,0 +1,23 @@
+uuid: 12816987-143b-4fed-af45-fa1895363368
+langcode: en
+status: true
+dependencies:
+  module:
+    - contact
+    - file
+id: contact_message.field_data_request_form
+field_name: field_data_request_form
+entity_type: contact_message
+type: file
+settings:
+  display_field: false
+  display_default: false
+  uri_scheme: public
+  target_type: file
+module: file
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

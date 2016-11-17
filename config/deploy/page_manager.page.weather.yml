@@ -1,0 +1,12 @@
+uuid: ae7fa669-fcaf-4d24-afdf-d43505b7aeaf
+langcode: en
+status: true
+dependencies: {  }
+id: weather
+label: Weather
+description: ''
+use_admin_theme: false
+path: /weather
+access_logic: and
+access_conditions: {  }
+parameters: {  }

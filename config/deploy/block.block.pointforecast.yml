@@ -1,0 +1,31 @@
+uuid: d1b869ce-f773-4197-8f79-059167ecd25a
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:77a34370-f539-4ba6-87e3-e8211161d7a8'
+  module:
+    - block_content
+    - system
+  theme:
+    - bootstrap_tongamet
+id: pointforecast
+theme: bootstrap_tongamet
+region: sidebar_second
+weight: -9
+provider: null
+plugin: 'block_content:77a34370-f539-4ba6-87e3-e8211161d7a8'
+settings:
+  id: 'block_content:77a34370-f539-4ba6-87e3-e8211161d7a8'
+  label: 'Point Forecast'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/node/22*\r\n/weather*"
+    negate: false
+    context_mapping: {  }

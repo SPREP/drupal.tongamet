@@ -1,0 +1,31 @@
+uuid: 54910c06-8042-4650-9f9f-48099bf3ab14
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:cfbe7716-ba7c-4485-b9b1-3833e1c62733'
+  module:
+    - block_content
+    - system
+  theme:
+    - bootstrap_tongamet
+id: latestobservations2
+theme: bootstrap_tongamet
+region: sidebar_second
+weight: -10
+provider: null
+plugin: 'block_content:cfbe7716-ba7c-4485-b9b1-3833e1c62733'
+settings:
+  id: 'block_content:cfbe7716-ba7c-4485-b9b1-3833e1c62733'
+  label: 'Latest Observations'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '/weather*'
+    negate: false
+    context_mapping: {  }

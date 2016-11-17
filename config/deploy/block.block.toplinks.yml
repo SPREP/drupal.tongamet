@@ -1,0 +1,25 @@
+uuid: 448d5ee0-90b5-4a4e-8c8a-079c3be35856
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:ad7224ba-4556-4351-9b27-d743b3c5ded2'
+  module:
+    - block_content
+  theme:
+    - bootstrap_tongamet
+id: toplinks
+theme: bootstrap_tongamet
+region: header
+weight: 0
+provider: null
+plugin: 'block_content:ad7224ba-4556-4351-9b27-d743b3c5ded2'
+settings:
+  id: 'block_content:ad7224ba-4556-4351-9b27-d743b3c5ded2'
+  label: 'Top Links'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

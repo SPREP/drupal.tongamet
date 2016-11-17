@@ -1,6 +1,6 @@
 uuid: 017b6fce-8f38-4513-abde-822a3bb326b9
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - system.menu.side-bar
@@ -10,8 +10,8 @@ dependencies:
     - bootstrap_tongamet
 id: sidebar
 theme: bootstrap_tongamet
-region: sidebar_second
-weight: -6
+region: '-1'
+weight: -11
 provider: null
 plugin: 'system_menu_block:side-bar'
 settings:
@@ -24,6 +24,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: '<front>'
+    pages: "<front>\r\n/node/4*\r\n/node/add/*\r\n/homepage*\r\n/weather*"
     negate: true
     context_mapping: {  }

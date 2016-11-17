@@ -1,0 +1,41 @@
+uuid: 015712ea-6c0d-4544-b68b-bcfa2de87c63
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:793dcaa6-8d7c-4b68-8608-0ca02370ece6'
+  module:
+    - block_content
+    - system
+    - user
+  theme:
+    - bootstrap_tongamet
+id: createweatherforecast
+theme: bootstrap_tongamet
+region: content
+weight: -5
+provider: null
+plugin: 'block_content:793dcaa6-8d7c-4b68-8608-0ca02370ece6'
+settings:
+  id: 'block_content:793dcaa6-8d7c-4b68-8608-0ca02370ece6'
+  label: 'Create Weather Forecast'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      administrator: administrator
+      weather_forecast_creator: weather_forecast_creator
+      weather_forecast_reviewer: weather_forecast_reviewer
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+  request_path:
+    id: request_path
+    pages: "/node/22*\r\n/weather"
+    negate: false
+    context_mapping: {  }

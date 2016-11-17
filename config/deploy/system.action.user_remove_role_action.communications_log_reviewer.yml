@@ -1,0 +1,14 @@
+uuid: 8d3179ce-c050-40ce-a8bc-557bb3a4951e
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.communications_log_reviewer
+  module:
+    - user
+id: user_remove_role_action.communications_log_reviewer
+label: 'Remove the Communications Log Reviewer role from the selected users'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: communications_log_reviewer

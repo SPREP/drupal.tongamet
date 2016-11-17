@@ -1,0 +1,76 @@
+uuid: c4ed71e8-9579-4e9a-8e27-45680c7bbc85
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.field_collection_item.field_timesheet.field_content
+    - field.field.field_collection_item.field_timesheet.field_from
+    - field.field.field_collection_item.field_timesheet.field_mode
+    - field.field.field_collection_item.field_timesheet.field_remarks
+    - field.field.field_collection_item.field_timesheet.field_review
+    - field.field.field_collection_item.field_timesheet.field_time
+    - field.field.field_collection_item.field_timesheet.field_to
+    - field.field.field_collection_item.field_timesheet.field_total
+    - field_collection.field_collection.field_timesheet
+  module:
+    - workbench_moderation
+id: field_collection_item.field_timesheet.default
+targetEntityType: field_collection_item
+bundle: field_timesheet
+mode: default
+content:
+  field_content:
+    weight: 10
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+  field_from:
+    weight: 7
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+  field_mode:
+    weight: 9
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  field_remarks:
+    weight: 11
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+  field_review:
+    weight: 13
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+  field_time:
+    weight: 6
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  field_to:
+    weight: 8
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+  field_total:
+    weight: 12
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+hidden: {  }

@@ -14,3 +14,4 @@ permissions:
   - 'administer panelizer node landing_page defaults'
   - 'administer panelizer node page defaults'
   - 'administer panelizer node weather_forecast defaults'
+  - 'administer panelizer node communications_log defaults'

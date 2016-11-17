@@ -1,0 +1,41 @@
+uuid: 22592064-0032-466c-a5ee-ef1a3f8a6410
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.weather
+    - views.view.weather
+  module:
+    - panels
+    - views
+id: weather-panels_variant-0
+label: Panels
+variant: panels_variant
+variant_settings:
+  blocks:
+    5d0be56e-5f45-410b-b4bd-5655ef84f250:
+      id: 'views_block:weather-block_1'
+      label: ''
+      provider: views
+      label_display: '0'
+      views_label: ''
+      items_per_page: none
+      region: middle
+      weight: 1
+      context_mapping: {  }
+      uuid: 5d0be56e-5f45-410b-b4bd-5655ef84f250
+  id: panels_variant
+  uuid: 6b1560c6-a31f-4b64-9948-7f3d7ab469ad
+  label: null
+  weight: 0
+  layout: onecol
+  layout_settings: {  }
+  page_title: 'Weather Services'
+  storage_type: page_manager
+  storage_id: weather-panels_variant-0
+  builder: ipe
+page: weather
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }
