@@ -37,3 +37,10 @@ header#navbar li.active a.is-active {
 iframe {
 	border: 0;
 }
+.region.region-sidebar-second h2.block-title {
+    font-size: medium;
+    font-weight: bold;
+}
+#block-toplinks {
+    font-size: 25px;
+}
