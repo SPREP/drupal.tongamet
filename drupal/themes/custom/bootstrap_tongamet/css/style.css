@@ -44,3 +44,6 @@ iframe {
 #block-toplinks {
     font-size: 25px;
 }
+.field.field--name-field-photo.field--type-image.field--label-hidden.field--item {
+    float: left;
+}
