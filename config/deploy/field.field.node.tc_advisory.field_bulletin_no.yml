@@ -1,0 +1,23 @@
+uuid: 5b589e39-e841-488c-a01a-fec7e8b91f09
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_bulletin_no
+    - node.type.tc_advisory
+id: node.tc_advisory.field_bulletin_no
+field_name: field_bulletin_no
+entity_type: node
+bundle: tc_advisory
+label: 'Bulletin No'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

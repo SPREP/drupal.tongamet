@@ -1,0 +1,15 @@
+uuid: 270c6381-8a32-49e8-99ab-3b6c7c1d1496
+langcode: en
+status: true
+dependencies: {  }
+id: media_release_reviewer
+label: 'Media Release Reviewer'
+weight: 12
+is_admin: null
+permissions:
+  - 'edit any media_release content'
+  - 'delete any media_release content'
+  - 'use draft_published transition'
+  - 'use needs_review_draft transition'
+  - 'use needs_review_published transition'
+  - 'use published_published transition'

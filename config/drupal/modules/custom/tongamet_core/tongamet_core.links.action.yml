@@ -1,0 +1,9 @@
+create_weather_forecast:
+  title: 'Create Weather Forecast'
+  route_name: 'node.add'
+  route_parameters:
+    node_type: 'weather_forecast'
+  appears_on:
+   - view.weather.page_1
+   - view.latest_weather.page_1
+

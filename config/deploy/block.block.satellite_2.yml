@@ -12,7 +12,7 @@ dependencies:
 id: satellite_2
 theme: bootstrap_tongamet
 region: sidebar_second
-weight: -7
+weight: -10
 provider: null
 plugin: 'block_content:a99f4093-9810-47a0-836f-291230cc0e69'
 settings:

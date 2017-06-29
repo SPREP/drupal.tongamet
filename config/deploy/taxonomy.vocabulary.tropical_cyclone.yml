@@ -1,0 +1,9 @@
+uuid: 7577863b-4c53-441b-b60b-df73cca4e54f
+langcode: en
+status: true
+dependencies: {  }
+name: 'Tropical Cyclone'
+vid: tropical_cyclone
+description: ''
+hierarchy: 0
+weight: 0

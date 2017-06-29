@@ -15,3 +15,5 @@ permissions:
   - 'administer panelizer node page defaults'
   - 'administer panelizer node weather_forecast defaults'
   - 'administer panelizer node communications_log defaults'
+  - 'administer panelizer node media_release defaults'
+  - 'administer panelizer node tc_advisory defaults'

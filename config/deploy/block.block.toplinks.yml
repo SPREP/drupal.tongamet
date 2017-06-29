@@ -10,8 +10,8 @@ dependencies:
     - bootstrap_tongamet
 id: toplinks
 theme: bootstrap_tongamet
-region: header
-weight: 0
+region: footer
+weight: -11
 provider: null
 plugin: 'block_content:ad7224ba-4556-4351-9b27-d743b3c5ded2'
 settings:

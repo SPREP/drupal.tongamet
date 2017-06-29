@@ -17,19 +17,7 @@ third_party_settings:
     custom: true
     displays:
       default:
-        blocks:
-          bdc4072e-88f2-4585-a9a0-147f92318925:
-            id: 'block_content:9cb01a39-2b8b-4f8c-bcd6-a7737fa19feb'
-            label: Latest
-            provider: block_content
-            label_display: '0'
-            status: true
-            info: ''
-            view_mode: full
-            context_mapping: {  }
-            region: middle
-            uuid: bdc4072e-88f2-4585-a9a0-147f92318925
-            weight: 1
+        blocks: {  }
         id: panels_variant
         uuid: 1a312aa0-75a2-4467-8421-33670a7bd039
         label: 'Single Column'

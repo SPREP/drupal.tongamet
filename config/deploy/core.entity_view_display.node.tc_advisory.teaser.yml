@@ -1,0 +1,59 @@
+uuid: c4fc40b4-5461-48cd-993f-42b6b9efdd42
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.tc_advisory.body
+    - field.field.node.tc_advisory.field_bulletin_no
+    - field.field.node.tc_advisory.field_downloads
+    - field.field.node.tc_advisory.field_language
+    - field.field.node.tc_advisory.field_tc_name
+    - node.type.tc_advisory
+  module:
+    - ds
+    - panelizer
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: onecol
+      path: profiles/lightning/modules/contrib/panels/layouts/onecol
+      library: layout_plugin/onecol
+      disable_css: false
+      entity_classes: all_classes
+      settings: {  }
+    regions:
+      middle:
+        - node_title
+        - links
+    fields:
+      node_title:
+        plugin_id: node_title
+        weight: 0
+        label: hidden
+        formatter: default
+        settings:
+          link: true
+          wrapper: h2
+          class: ''
+  panelizer:
+    enable: false
+    custom: false
+    allow: false
+    default: default
+id: node.tc_advisory.teaser
+targetEntityType: node
+bundle: tc_advisory
+mode: teaser
+content:
+  links:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  body: true
+  field_bulletin_no: true
+  field_downloads: true
+  field_language: true
+  field_tc_name: true

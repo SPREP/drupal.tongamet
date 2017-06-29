@@ -1,0 +1,41 @@
+uuid: 3aa9dc98-5d28-4888-827e-2a66ecbdcd91
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:b8b4ddb8-adef-40ed-a23a-8248a2ceb95f'
+  module:
+    - block_content
+    - system
+    - user
+  theme:
+    - bootstrap_tongamet
+id: createmediarelease
+theme: bootstrap_tongamet
+region: content
+weight: -7
+provider: null
+plugin: 'block_content:b8b4ddb8-adef-40ed-a23a-8248a2ceb95f'
+settings:
+  id: 'block_content:b8b4ddb8-adef-40ed-a23a-8248a2ceb95f'
+  label: 'Create Media Release'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      administrator: administrator
+      media_release_creator: media_release_creator
+      media_release_reviewer: media_release_reviewer
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+  request_path:
+    id: request_path
+    pages: "/node/32\r\n/media-releases*"
+    negate: false
+    context_mapping: {  }

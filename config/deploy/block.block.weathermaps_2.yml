@@ -12,7 +12,7 @@ dependencies:
 id: weathermaps_2
 theme: bootstrap_tongamet
 region: sidebar_second
-weight: -6
+weight: -9
 provider: null
 plugin: 'block_content:a2d78a4b-fa5d-4a74-8082-139fa5d16185'
 settings:

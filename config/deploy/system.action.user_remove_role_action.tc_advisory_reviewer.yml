@@ -1,0 +1,14 @@
+uuid: d3ea492d-a1b0-4a70-9c6c-21376ddb524f
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.tc_advisory_reviewer
+  module:
+    - user
+id: user_remove_role_action.tc_advisory_reviewer
+label: 'Remove the TC Advisory Reviewer role from the selected users'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: tc_advisory_reviewer

@@ -1,0 +1,131 @@
+uuid: aaa910fb-e48b-42a7-a049-2a4136371ce7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.tc_advisory.body
+    - field.field.node.tc_advisory.field_bulletin_no
+    - field.field.node.tc_advisory.field_downloads
+    - field.field.node.tc_advisory.field_language
+    - field.field.node.tc_advisory.field_tc_name
+    - node.type.tc_advisory
+  module:
+    - file
+    - options
+    - panelizer
+    - text
+    - user
+third_party_settings:
+  panelizer:
+    enable: true
+    custom: false
+    allow: false
+    default: default
+    displays:
+      default:
+        blocks:
+          63845b63-5929-4d62-94a8-37170e188e57:
+            id: 'entity_field:node:created'
+            label: 'Authored on'
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: hidden
+              type: timestamp
+              settings:
+                date_format: medium
+                custom_date_format: ''
+                timezone: ''
+              third_party_settings: {  }
+              weight: 0
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            region: middle
+            weight: 1
+            uuid: 63845b63-5929-4d62-94a8-37170e188e57
+          712bd14d-9670-4c56-9f3e-6c37c1da835d:
+            id: 'entity_field:node:body'
+            label: Bulletin
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: above
+              type: text_default
+              settings: {  }
+              third_party_settings: {  }
+              weight: 0
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            region: middle
+            weight: 2
+            uuid: 712bd14d-9670-4c56-9f3e-6c37c1da835d
+          b14d00cb-4bbc-4b6a-a6bc-c09a55f585ed:
+            id: 'entity_field:node:field_downloads'
+            label: Downloads
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: above
+              type: file_default
+              settings: {  }
+              third_party_settings: {  }
+              weight: 0
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            region: middle
+            weight: 3
+            uuid: b14d00cb-4bbc-4b6a-a6bc-c09a55f585ed
+        id: panels_variant
+        label: Default
+        uuid: 55fcc4be-00d6-4a21-a115-324e3c8c78f3
+        weight: 0
+        layout: onecol
+        layout_settings: {  }
+        page_title: '[node:title]'
+        storage_type: panelizer_default
+        storage_id: 'node:tc_advisory:full:default'
+        builder: ipe
+        pattern: panelizer
+id: node.tc_advisory.default
+targetEntityType: node
+bundle: tc_advisory
+mode: default
+content:
+  body:
+    label: above
+    type: text_default
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+  field_bulletin_no:
+    weight: 3
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+  field_downloads:
+    weight: 5
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: file_default
+  field_language:
+    weight: 6
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+  field_tc_name:
+    weight: 4
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  links:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

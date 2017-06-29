@@ -1,0 +1,31 @@
+uuid: effcb01e-564e-4482-8f9c-2f54480f8e54
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:5079708c-b411-4f93-9f62-986323a5dfcb'
+  module:
+    - block_content
+    - system
+  theme:
+    - bootstrap_tongamet
+id: news
+theme: bootstrap_tongamet
+region: sidebar_second
+weight: -5
+provider: null
+plugin: 'block_content:5079708c-b411-4f93-9f62-986323a5dfcb'
+settings:
+  id: 'block_content:5079708c-b411-4f93-9f62-986323a5dfcb'
+  label: news
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /node/4
+    negate: false
+    context_mapping: {  }

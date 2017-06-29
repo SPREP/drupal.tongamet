@@ -11,7 +11,7 @@ dependencies:
 id: footeraboutus
 theme: bootstrap_tongamet
 region: footer
-weight: -9
+weight: -10
 provider: null
 plugin: 'block_content:05417c11-3558-4483-9986-0808a3619c09'
 settings:

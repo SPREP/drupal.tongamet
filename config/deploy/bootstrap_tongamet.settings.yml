@@ -12,7 +12,7 @@ features:
   favicon: 1
   node_user_picture: true
 logo:
-  path: ''
+  path: 'public://header.png'
   url: ''
   use_default: 0
 cdn_custom_css: /libraries/bootstrap/css/bootstrap.css
@@ -20,7 +20,6 @@ cdn_custom_css_min: /libraries/bootstrap/css/bootstrap.min.css
 cdn_custom_js: /libraries/bootstrap/js/bootstrap.js
 cdn_custom_js_min: /libraries/bootstrap/js/bootstrap.min.js
 table_responsive: '1'
-table: ''
 region_wells:
   navigation: ''
   navigation_collapsible: ''
@@ -35,3 +34,4 @@ breadcrumb: '2'
 schema: '8000'
 cdn_provider_import_data: ''
 cdn_provider: custom
+table: ''

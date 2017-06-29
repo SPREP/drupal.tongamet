@@ -1,0 +1,14 @@
+uuid: fa6711c0-2c54-4571-a12a-ca4472351e45
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.tc_advisory_creator
+  module:
+    - user
+id: user_remove_role_action.tc_advisory_creator
+label: 'Remove the TC Advisory Creator role from the selected users'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: tc_advisory_creator

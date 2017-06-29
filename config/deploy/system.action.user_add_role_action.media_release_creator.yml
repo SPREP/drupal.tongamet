@@ -1,0 +1,14 @@
+uuid: 55031eea-6221-408f-bfeb-0086c1a8bcb2
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.media_release_creator
+  module:
+    - user
+id: user_add_role_action.media_release_creator
+label: 'Add the Media Release Creator role to the selected users'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: media_release_creator

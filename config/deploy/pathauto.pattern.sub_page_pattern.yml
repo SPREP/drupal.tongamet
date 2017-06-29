@@ -9,15 +9,16 @@ label: 'Sub Page Pattern'
 type: 'canonical_entities:node'
 pattern: '[node:menu-link:parent:title]/[node:title]'
 selection_criteria:
-  8d1dc28a-9788-4633-b1fa-f3c6edf0ac26:
+  d5327a46-b71a-4537-a7ae-bb7e5b963592:
     id: node_type
     bundles:
       landing_page: landing_page
+      media_release: media_release
       page: page
     negate: false
     context_mapping:
       node: node
-    uuid: 8d1dc28a-9788-4633-b1fa-f3c6edf0ac26
+    uuid: d5327a46-b71a-4537-a7ae-bb7e5b963592
 selection_logic: and
-weight: -9
+weight: -8
 relationships: {  }

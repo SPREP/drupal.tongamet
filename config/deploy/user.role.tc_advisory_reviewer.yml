@@ -1,0 +1,15 @@
+uuid: af6ec45b-c069-4c71-a848-cb4793b95d8d
+langcode: en
+status: true
+dependencies: {  }
+id: tc_advisory_reviewer
+label: 'TC Advisory Reviewer'
+weight: 14
+is_admin: null
+permissions:
+  - 'edit any tc_advisory content'
+  - 'delete any tc_advisory content'
+  - 'use draft_published transition'
+  - 'use needs_review_draft transition'
+  - 'use needs_review_published transition'
+  - 'use published_published transition'

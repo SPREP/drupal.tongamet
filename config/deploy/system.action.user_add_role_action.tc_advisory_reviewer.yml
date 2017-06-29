@@ -1,0 +1,14 @@
+uuid: 6d52f734-def0-421d-9898-828f674f1cc8
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.tc_advisory_reviewer
+  module:
+    - user
+id: user_add_role_action.tc_advisory_reviewer
+label: 'Add the TC Advisory Reviewer role to the selected users'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: tc_advisory_reviewer

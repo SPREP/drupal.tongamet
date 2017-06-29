@@ -11,7 +11,7 @@ _core:
 id: bootstrap_tongamet_help
 theme: bootstrap_tongamet
 region: content
-weight: -10
+weight: -13
 provider: null
 plugin: help_block
 settings:

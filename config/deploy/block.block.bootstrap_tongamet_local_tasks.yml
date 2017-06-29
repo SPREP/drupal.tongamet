@@ -9,7 +9,7 @@ _core:
 id: bootstrap_tongamet_local_tasks
 theme: bootstrap_tongamet
 region: content
-weight: -6
+weight: -9
 provider: null
 plugin: local_tasks_block
 settings:

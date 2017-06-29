@@ -1,0 +1,27 @@
+uuid: 36e984cd-da42-4bca-b372-3ebefe15ec22
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_downloads
+    - node.type.media_release
+  module:
+    - file
+id: node.media_release.field_downloads
+field_name: field_downloads
+entity_type: node
+bundle: media_release
+label: Downloads
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'pdf doc docx'
+  max_filesize: '10 MB'
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

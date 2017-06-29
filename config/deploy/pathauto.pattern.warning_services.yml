@@ -1,0 +1,22 @@
+uuid: 8d219ed5-8208-40b4-98cf-051e1f3593f6
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: warning_services
+label: 'Warning Services pattern'
+type: 'canonical_entities:node'
+pattern: 'warning-services/[node:field_tc_name:entity:name]/[node:field_bulletin_no:value]/[node:field_language:value]'
+selection_criteria:
+  9151566f-b464-4fa8-b001-34ae63274f6b:
+    id: node_type
+    bundles:
+      tc_advisory: tc_advisory
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 9151566f-b464-4fa8-b001-34ae63274f6b
+selection_logic: and
+weight: -5
+relationships: {  }

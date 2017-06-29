@@ -12,7 +12,7 @@ dependencies:
 id: latestobservations2
 theme: bootstrap_tongamet
 region: sidebar_second
-weight: -10
+weight: -13
 provider: null
 plugin: 'block_content:cfbe7716-ba7c-4485-b9b1-3833e1c62733'
 settings:

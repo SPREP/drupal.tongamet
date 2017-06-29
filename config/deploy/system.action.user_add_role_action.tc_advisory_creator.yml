@@ -1,0 +1,14 @@
+uuid: 3ca7b68a-2680-48d5-8fa0-0960e8d81936
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.tc_advisory_creator
+  module:
+    - user
+id: user_add_role_action.tc_advisory_creator
+label: 'Add the TC Advisory Creator role to the selected users'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: tc_advisory_creator

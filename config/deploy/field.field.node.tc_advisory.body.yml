@@ -1,0 +1,22 @@
+uuid: ac5551f1-0891-449e-814c-a9abab0c0f2b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.tc_advisory
+  module:
+    - text
+id: node.tc_advisory.body
+field_name: body
+entity_type: node
+bundle: tc_advisory
+label: Bulletin
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

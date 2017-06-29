@@ -9,7 +9,7 @@ _core:
 id: bootstrap_tongamet_local_actions
 theme: bootstrap_tongamet
 region: content
-weight: -7
+weight: -10
 provider: null
 plugin: local_actions_block
 settings:

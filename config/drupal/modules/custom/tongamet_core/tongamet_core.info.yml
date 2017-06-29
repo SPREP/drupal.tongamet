@@ -1,0 +1,5 @@
+name: Tonga Met Core Module
+type: module
+description: Customisations for Tonga Met.
+package: Tonga Met
+core: 8.x

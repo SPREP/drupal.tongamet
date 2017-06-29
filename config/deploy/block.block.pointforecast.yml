@@ -12,7 +12,7 @@ dependencies:
 id: pointforecast
 theme: bootstrap_tongamet
 region: sidebar_second
-weight: -9
+weight: -12
 provider: null
 plugin: 'block_content:77a34370-f539-4ba6-87e3-e8211161d7a8'
 settings:

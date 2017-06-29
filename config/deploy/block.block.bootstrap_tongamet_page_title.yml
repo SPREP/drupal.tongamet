@@ -2,6 +2,8 @@ uuid: af6ceb42-78a7-488e-8038-0d0d6fdee673
 langcode: en
 status: true
 dependencies:
+  module:
+    - system
   theme:
     - bootstrap_tongamet
 _core:
@@ -9,7 +11,7 @@ _core:
 id: bootstrap_tongamet_page_title
 theme: bootstrap_tongamet
 region: content
-weight: -8
+weight: -11
 provider: null
 plugin: page_title_block
 settings:
@@ -17,4 +19,9 @@ settings:
   label: 'Page title'
   provider: core
   label_display: '0'
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: /node/4
+    negate: true
+    context_mapping: {  }
