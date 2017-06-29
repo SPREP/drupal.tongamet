@@ -1,19 +1,16 @@
 favicon:
   mimetype: image/vnd.microsoft.icon
   path: profiles/lightning/favicon.ico
-  url: 'http://to-int.meteo.fi/profiles/lightning/favicon.ico'
+  url: ''
   use_default: false
-schemas:
-  bootstrap: 8000
-schema: 8000
 features:
   comment_user_picture: true
   comment_user_verification: true
   favicon: true
   node_user_picture: true
 logo:
-  path: 'public://banner_1.png'
+  path: 'public://logo_banner.png'
   url: ''
   use_default: false
-table_responsive: '-1'
-table: ''
+schemas:
+  bootstrap: 8000
